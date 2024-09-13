@@ -30,7 +30,7 @@ model Transaction {
   amount            Float
   //Relation to User
   userId            String
-  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  user              User    @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
   createdAt         DateTime @default(now())
   @@index([userId])
 }
