@@ -1,4 +1,4 @@
-import type { Transaction } from "@/types/Transaction";
+import { Transaction } from "@/types/Transaction";
 import getTransactions from "@/app/actions/getTransactions";
 
 const TransactionList = async () => {
